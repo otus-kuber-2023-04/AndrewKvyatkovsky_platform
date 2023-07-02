@@ -1,2 +1,12 @@
-# AndrewKvyatkovsky_platform
-AndrewKvyatkovsky Platform repository
+Домашнее задание 1. Знакомство с Kubernetes, основные понятия и архитектура.
+
+Установил kubectl.
+Развернул minikube, проверил работоспособность.
+Статические поды (например, kube-apiserver) создаются после удаления непосредственно kubelet-ом на основе манифестов из /etc/kubernetes/manifests, core-dns и kube-proxy управляются контроллерами (ReplicaSet и DaemonSet).
+Собрал образ с nginx согласно требованиям, разместил на Docker Hub. 
+Создал манифест для пода, добавил описание Init контейнера. 
+Запустил pod, проверил работоспособность web сервера. 
+Собрал образ frontend Hipster Shop-а, разместил на Docker Hub.
+Создал манифест для пода, убедился,что под не запускается.
+Добавил env в spec манифеста, проверил состояние пода.
+
